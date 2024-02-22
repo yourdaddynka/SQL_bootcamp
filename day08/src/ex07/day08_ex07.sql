@@ -1,0 +1,16 @@
+-- 1
+BEGIN TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+-- 2
+BEGIN TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+-- 1
+UPDATE pizzeria SET rating = 2 WHERE id = 1;
+-- 2
+UPDATE pizzeria SET rating = 2.3 WHERE id = 2;
+-- 1
+UPDATE pizzeria SET rating = 2.3 WHERE id = 2;
+-- 2
+UPDATE pizzeria SET rating = 2 WHERE id = 1;
+-- 1
+COMMIT;
+-- 2
+COMMIT;
