@@ -18,6 +18,10 @@ You will see how to use specific OLAP constructions to get a “Value” from da
 You will see how database works with transactions and isolation levels
 ## Day 09
 You will see how to create and use functional blocks in Databases
+## Advanced_query00
+You will implementing a quick solution on SQL to achieve results of Traveling Salesman Problem
+## Advanced_query01
+You will know what DWH is and how to create a first ETL process
 
 
 База данных находится в ```materials/model.sql```
