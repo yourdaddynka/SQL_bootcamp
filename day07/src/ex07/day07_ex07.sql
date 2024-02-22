@@ -1,0 +1,1 @@
+SELECT CAST(avg(pizzeria.rating) as decimal(10,4)) AS global_rating  FROM pizzeria
